@@ -13,7 +13,6 @@ def rotate_rvec(rvec, alpha):
 
 def check_rvec(rvec):
     if rvec.shape != (1, 1, 3):
-        print("DETECTED")
         res = np.ndarray(shape = (1, 1, 3) ,dtype=np.float64)
 
         res[0][0][0] = rvec[0][0][0]
@@ -26,7 +25,6 @@ def check_rvec(rvec):
 
 def check_tvec(tvec):
     if tvec.shape != (1, 1, 3):
-        print("DETECTED T")
         res = np.ndarray(shape = (1, 1, 3) ,dtype=np.float64)
 
         res[0][0][0] = tvec[0][0][0]
@@ -88,7 +86,7 @@ if __name__ == '__main__':
                     rvec = check_rvec(rvec)
                     tvec = check_tvec(tvec)
 
-                    img = cv2.aruco.drawAxis(img, cameraMatrix, dist, rvec, tvec, 0.1)
+                    #img = cv2.aruco.drawAxis(img, cameraMatrix, dist, rvec, tvec, 0.1)
 
                     # rotation example
                     # rvec = rotate_rvec(rvec, alpha)
@@ -105,6 +103,7 @@ if __name__ == '__main__':
                             x = int(vertex[0][0])
                             y = int(vertex[0][1])
                             if 0 < x < 640 and 0 < y < 480:
+                                #pass
                                 cv2.circle(img, [x, y], 1, (0, 255, 0))
                         except Exception as e:
                             pass
