@@ -16,7 +16,10 @@ Baseline
 
   3 - Project 3D model points to 2D frame coordinate system
   
-  ![image](https://user-images.githubusercontent.com/31764930/183303065-473cd152-9f75-4fd3-bb02-74c1fab2682d.png)
+  ![ezgif-5-376ad0b923](https://user-images.githubusercontent.com/31764930/183308099-6cbc0297-a60f-44ea-8395-dd0d5ddf85d7.gif)
+
+  
+
   
   For run project connect USB webcam to your PC and paste in terminal:
   
